@@ -3,7 +3,8 @@ import React from "react";
 function Navbar() {
   return (
     <nav className="navbar">
-      <img src="logo.png" alt="Logo" className="navbar--logo"/>
+      <img src="react-logo.png" alt="Logo" className="navbar--logo" />
+      <p>react</p>
     </nav>
   );
 }
