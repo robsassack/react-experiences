@@ -5,6 +5,18 @@
   padding: 0;
 }
 
+.gray {
+  color: #918E9B;
+}
+
+.black {
+  color: #222222;
+}
+
+.bold {
+  font-weight: 700;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -25,6 +37,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 49px;
 }
 
 .hero--gallery {
@@ -42,10 +55,47 @@
 
 .hero--title {
   margin-top: 32px;
-  font-size: 2.25em;
+  font-size: 36px;
 }
 
 .hero--text {
   margin-top: 16px;
-  color: #222222;
+  font-size: 16px;
+}
+
+.card {
+  width: 176px;
+  font-size: 12px;
+}
+
+.card--image-container {
+  position: relative;
+}
+
+.card--image {
+  border-radius: 9px;
+  width: 100%;
+}
+
+.card--status {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  height: 20px;
+  font-size: 10px;
+  display: flex;
+  padding: 4px 6px;
+  align-items: center;
+  border-radius: 2px;
+}
+
+.card--text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.card--star {
+  color: #FE395C;
+  font-size: 13px;
 }
