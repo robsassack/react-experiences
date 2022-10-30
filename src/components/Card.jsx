@@ -13,8 +13,7 @@ function Card(props) {
           <span className="card--star">★ </span>
           <span className="card--rating black">{rating.toFixed(1)}</span>
           <span> </span>
-          <span className="card--num-avail gray">({reviewCount}) • </span>
-          <span className="card--loc gray">{loc}</span>
+          <span className="card--reviews gray">({reviewCount}) • {loc}</span>
         </span>
         <span className="card--desc black">{desc}</span>
         <span className="card--price-line black">
