@@ -11,11 +11,11 @@ function App() {
       <Card
         image="cards/katie-zaferes.png"
         status="SOLD OUT"
-        rating="5.0"
-        numAvail="6"
+        rating={5.0}
+        numAvail={6}
         loc="USA"
         desc="Life lessons with Katie Zaferes"
-        price="$136"
+        price={136}
       />
     </>
   )

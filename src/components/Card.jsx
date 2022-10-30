@@ -11,14 +11,14 @@ function Card(props) {
       <div className="card--text-container">
         <span className="card--rating-loc">
           <span className="card--star">★ </span>
-          <span className="card--rating black">{rating}</span>
+          <span className="card--rating black">{rating.toFixed(1)}</span>
           <span> </span>
           <span className="card--num-avail gray">({numAvail}) • </span>
           <span className="card--loc gray">{loc}</span>
         </span>
         <span className="card--desc black">{desc}</span>
         <span className="card--price-line black">
-          <span className="card--price bold">From {price}</span>
+          <span className="card--price bold">From ${price}</span>
           <span> / person</span>
         </span>
       </div>
