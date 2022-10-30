@@ -1,23 +1,24 @@
 import React from "react";
 
 function Card(props) {
+  const { image, status, rating, numAvail, loc, desc, price } = props;
   return (
     <div className="card">
       <div className="card--image-container">
-        <img src="cards/katie-zaferes.png" alt="Card image" className="card--image"/>
-        <div className="card--status">SOLD OUT</div>
+        <img src={image} alt="Card image" className="card--image"/>
+        <div className="card--status">{status}</div>
       </div>
       <div className="card--text-container">
         <span className="card--rating-loc">
           <span className="card--star">★ </span>
-          <span className="card--rating black">5.0</span>
+          <span className="card--rating black">{rating}</span>
           <span> </span>
-          <span className="card--num-avail gray">(6) • </span>
-          <span className="card--loc gray">USA</span>
+          <span className="card--num-avail gray">({numAvail}) • </span>
+          <span className="card--loc gray">{loc}</span>
         </span>
-        <span className="card--desc black">Life lessons with Katie Zaferes</span>
+        <span className="card--desc black">{desc}</span>
         <span className="card--price-line black">
-          <span className="card--price bold">From $136</span>
+          <span className="card--price bold">From {price}</span>
           <span> / person</span>
         </span>
       </div>
