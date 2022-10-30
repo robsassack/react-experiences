@@ -64,6 +64,9 @@
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 200px;
   font-size: 12px;
 }
@@ -93,7 +96,7 @@
 .card--text-container {
   display: flex;
   flex-direction: column;
-  font-size: 13.5px;
+  font-size: 13px;
 }
 
 .card--star {
