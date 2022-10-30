@@ -1,11 +1,11 @@
 import React from "react";
 
 function Card(props) {
-  const { image, status, rating, numAvail, loc, desc, price } = props;
+  const { image, status, rating, reviewCount, loc, desc, price } = props;
   return (
     <div className="card">
       <div className="card--image-container">
-        <img src={image} alt="Card image" className="card--image"/>
+        <img src={`cards/${image}`} alt="Card image" className="card--image"/>
         {status && <div className="card--status">{status}</div>}
       </div>
       <div className="card--text-container">
@@ -13,7 +13,7 @@ function Card(props) {
           <span className="card--star">★ </span>
           <span className="card--rating black">{rating.toFixed(1)}</span>
           <span> </span>
-          <span className="card--num-avail gray">({numAvail}) • </span>
+          <span className="card--num-avail gray">({reviewCount}) • </span>
           <span className="card--loc gray">{loc}</span>
         </span>
         <span className="card--desc black">{desc}</span>
