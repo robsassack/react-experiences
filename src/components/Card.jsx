@@ -6,7 +6,7 @@ function Card(props) {
     <div className="card">
       <div className="card--image-container">
         <img src={image} alt="Card image" className="card--image"/>
-        <div className="card--status">{status}</div>
+        {status && <div className="card--status">{status}</div>}
       </div>
       <div className="card--text-container">
         <span className="card--rating-loc">
