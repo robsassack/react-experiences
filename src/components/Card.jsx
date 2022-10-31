@@ -1,7 +1,7 @@
 import React from "react";
 
 function Card(props) {
-  const { image, status, rating, reviewCount, loc, desc, price } = props;
+  const { image, status, rating, reviewCount, loc, title, price } = props;
   return (
     <div className="card">
       <div className="card--image-container">
@@ -15,7 +15,7 @@ function Card(props) {
           <span> </span>
           <span className="card--reviews gray">({reviewCount}) • {loc}</span>
         </span>
-        <span className="card--desc black">{desc}</span>
+        <span className="card--title black">{title}</span>
         <span className="card--price-line black">
           <span className="card--price bold">From ${price}</span>
           <span> / person</span>
