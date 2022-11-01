@@ -1,7 +1,14 @@
 import React from "react";
 
 function Card(props) {
-  const { image, openSpots, rating, reviewCount, loc, title, price } = props;
+  const image = props.item.coverImg;
+  const openSpots = props.item.openSpots;
+  const rating = props.item.stats.rating;
+  const reviewCount = props.item.stats.reviewCount;
+  const loc = props.item.location;
+  const title = props.item.title;
+  const price = props.item.price;
+
   let badgeText;
   if (openSpots === 0) {
     badgeText = "SOLD OUT";
