@@ -73,6 +73,7 @@ section {
   gap: 20px;
   padding: 0 10%;
   overflow-x: auto;
+  margin-bottom: 40px;
 }
 
 .card {
