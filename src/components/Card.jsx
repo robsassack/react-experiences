@@ -12,7 +12,7 @@ function Card(props) {
   let badgeText;
   if (openSpots === 0) {
     badgeText = "SOLD OUT";
-  } else if (props.loc === "Online") {
+  } else if (loc === "Online") {
     badgeText = "ONLINE";
   }
 
