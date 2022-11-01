@@ -97,7 +97,7 @@ section {
   width: 100%;
 }
 
-.card--status {
+.card--open-spots {
   position: absolute;
   top: 10px;
   left: 10px;
